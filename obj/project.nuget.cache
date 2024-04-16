@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "OF5ubpUR+en6b97jLyZmp3vnDsjNOhg/mWc9rar2aETn8paDTVWuIaPLCrze03Q/osZgF5tUpuUA2B9kiSJI4w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\ConsumirAPILibreria.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\user\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
