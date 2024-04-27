@@ -23,7 +23,7 @@ namespace ConsumirAPILibreria.Controllers
         {
             List<ModeloCategoria> lista = await _servicioAPI.lista();
 
-            return Json(new{data=lista });
+            return Json(new { data = lista });
         }
         [ResponseCache(Duration =0,Location =ResponseCacheLocation.None, NoStore = true)]
 
