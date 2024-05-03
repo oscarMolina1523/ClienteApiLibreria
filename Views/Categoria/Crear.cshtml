@@ -34,6 +34,45 @@
         </div>
     </div>
 </div>
+<div class="modal fade" id="FormModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header btn-info text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Categoria</h5>
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="form">
+
+                    <input type="hidden" class="form-control form-control-sm model" id="txtid" name="Id">
+
+                    <div class="form-group row">
+                        <label for="txtDescripcion" class="col-form-label col-sm-2 col-form-label-sm">Descripcion: <span class="error"></span></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm model" id="txtDescripcion" name="Descripcion">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cboEstado" class="col-sm-2 col-form-label col-form-label-sm">Activo:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control form-control-sm model" id="cboEstado" name="Estado">
+                                <option value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-danger"  data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-sm btn-primary" onclick="Guardar()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
 @section Scripts{
     <partial name="_ValidationScriptsPartial" /> 
     <script src="~/js/CrudCategoria.js"></script>
