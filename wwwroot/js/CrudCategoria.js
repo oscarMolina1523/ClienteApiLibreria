@@ -242,6 +242,7 @@ function abrirPopUpForm(json) {
         $("#cboEstado").val(json.estado == true ? 1 : 0);
 
     } else {
+        $("#txtid").val(null);
         $("#txtDescripcion").val("");
         $("#cboEstado").val();
     }
@@ -262,7 +263,7 @@ function Guardar() {
         console.log($("#txtid").val());
         jQuery.ajax({
             url: "/Categoria/Guardar",
-            type: "PUT",
+            type: "POST",
             data: request,
             success: function (data) {
 
