@@ -581,6 +581,30 @@
       "PackagePath": "staticwebassets\\js\\CrudCategoria.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\CrudCliente.js",
+      "PackagePath": "staticwebassets\\js\\CrudCliente.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\CrudEmpleado.js",
+      "PackagePath": "staticwebassets\\js\\CrudEmpleado.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\CrudMarca.js",
+      "PackagePath": "staticwebassets\\js\\CrudMarca.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\CrudMaterial.js",
+      "PackagePath": "staticwebassets\\js\\CrudMaterial.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\CrudMedida.js",
+      "PackagePath": "staticwebassets\\js\\CrudMedida.js"
+    },
+    {
+      "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\CrudRol.js",
+      "PackagePath": "staticwebassets\\js\\CrudRol.js"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\ConsumirAPILibreria\\wwwroot\\js\\assets\\.DS_Store",
       "PackagePath": "staticwebassets\\js\\assets\\.DS_Store"
     },
