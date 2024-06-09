@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ConsumirAPILibreria</title>
+    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+     />
+</head>
+<body>
+    <section class="category_section layout_padding">
+        <div class="container">
+            <div class="heading_container">
+                <h2>
+                    Seleccione una Accion
+                </h2>
+            </div>
+            <div class="category_container">
+                <div class="box">
+                    <div class="img-box">
+                        <img src="~/imagenes/catalogos.png" alt="" asp-controller="Home" 
+                        asp-action="AdministradorCatalogos" id="catalogos" onclick="redireccionar()">
+                        <script>
+                            function redireccionar() {
+                                window.location.href = '/Home/AdministradorCatalogos';
+                            }
+                        </script>
+                    </div>
+                    
+                    <div class="detail-box">
+                        <h5>
+                            Administrador de Catalogos
+                        </h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="~/imagenes/compra.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Realizar Compra
+                        </h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="~/imagenes/venta.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Realizar Venta
+                        </h5>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="img-box">
+                        <img src="~/imagenes/inventario.png" alt="">
+                    </div>
+                    <div class="detail-box">
+                        <h5>
+                            Administrar Inventario
+                        </h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+
+
+

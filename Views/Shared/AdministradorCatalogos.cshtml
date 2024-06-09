@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ConsumirAPILibreria</title>
+    
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    
+</head>
+<div class="encabezado">
+    <h1 style="color: white;">
+        Catalogos
+    </h1>
+</div>
+<section class="freelance_section ">
+    <div id="accordion">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-5 offset-md-1">
+                    <div class="detail-box">
+                        <div class="tab_container">
+                            <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar1()" asp-controller="Categoria" asp-action="Crear">
+                                    <script>
+                                        function redireccionar1() {
+                                            window.location.href = '/Categoria/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Categorias
+                                    </h3 >
+                                </div>
+                            </div>
+                            <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar2()" asp-controller="Cliente" asp-action="Crear">
+                                    <script>
+                                        function redireccionar2() {
+                                            window.location.href = '/Cliente/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Cliente
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar3()" asp-controller="Empleado" asp-action="Crear">
+                                    <script>
+                                        function redireccionar3() {
+                                            window.location.href = '/Empleado/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Empleado
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="t-link-box collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar4()" asp-controller="Marca" asp-action="Crear">
+                                    <script>
+                                        function redireccionar4() {
+                                            window.location.href = '/Marca/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Marca
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar5()" asp-controller="Material" asp-action="Crear">
+                                    <script>
+                                        function redireccionar5() {
+                                            window.location.href = '/Material/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Material
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar6()" asp-controller="Medida" asp-action="Crear">
+                                    <script>
+                                        function redireccionar6() {
+                                            window.location.href = '/Medida/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Unidades de Medida
+                                    </h3>
+                                </div>
+                            </div>
+                            <div class="t-link-box" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                <div class="img-box">
+                                    <img src="~/imagenes/select.png" alt="" onclick="redireccionar7()" asp-controller="Rol" asp-action="Crear">
+                                    <script>
+                                        function redireccionar7() {
+                                            window.location.href = '/Rol/Crear';
+                                        }
+                                    </script>
+                                </div>
+                                <div class="detail-box">
+                                    <h3>
+                                        Roles
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="collapse show" id="collapseOne" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="img-box">
+                            <img src="https://img.freepik.com/vector-premium/administrador-sistema-red-ilustraciones-vectores-dibujos-animados-aislados_107173-30343.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+                <div class="collapse" id="collapseThree" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="img-box">
+                        <img src="https://img.freepik.com/vector-premium/administrador-sistema-red-ilustraciones-vectores-dibujos-animados-aislados_107173-30343.jpg" alt="">
+                    </div>
+                </div>
+                <div class="collapse" id="collapseFour" aria-labelledby="headingfour" data-parent="#accordion">
+                    <div class="img-box">
+                        <img src="https://img.freepik.com/vector-premium/administrador-sistema-red-ilustraciones-vectores-dibujos-animados-aislados_107173-30343.jpg" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- end freelance section -->

@@ -11,6 +11,8 @@ builder.Services.AddScoped<IServicioRol, ServicioRol>();
 builder.Services.AddScoped<IServicioMedida, ServicioMedida>();
 builder.Services.AddScoped<IServicioCliente, ServicioCliente>();
 builder.Services.AddScoped<IServicioEmpleado, ServicioEmpleado>();
+builder.Services.AddScoped<IServicioProveedor, ServicioProveedor>();
+builder.Services.AddScoped<IServicioUsuario, ServicioUsuario>();
 
 var app = builder.Build();
 

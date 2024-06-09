@@ -1,0 +1,104 @@
+﻿@model ConsumirAPILibreria.Models.Usuario;
+@{
+    ViewBag.Title = "Crear";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="content-wrapper" style="padding:18px">
+    <div class="col-sm-12">
+        <div class="card border-info">
+            <div class="card-header bg-info text-white">
+                Lista de Usuarios
+            </div>
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-sm-4">
+                        <button type="button" class="btn btn-sm btn-success" onclick="abrirPopUpForm(null)"><i class="fa fa-plus" aria-hidden="true"></i> Agregar Nuevo</button>
+                    </div>
+                </div>
+
+                <hr />
+                <div class="row mt-3">
+                    <div class="col-sm-12">
+                        <table id="tbdataUsuario" class="table table-striped table-bordered nowrap compact" style="width:100%">
+                            <thead>
+                                <tr>
+                                    <th>Codigo</th>
+                                    <th>User Name</th>
+                                    <th>Contraseña</th>
+                                    <th>Empleado</th>
+                                    <th>Rol</th>
+                                    <th>Estado</th>
+                                    <th>Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" id="FormModalUsuario" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header btn-info text-white">
+                <h5 class="modal-title" id="exampleModalLabel">Usuario</h5>
+                <button type="button" class="close " data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form id="formUsuario">
+
+                    <input type="hidden" class="form-control form-control-sm model" id="txtid" name="Id">
+
+                    <div class="form-group row">
+                        <label for="txtUserName" class="col-form-label col-sm-2 col-form-label-sm">User Name : <span class="error"></span></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm model" id="txtUserName" name="UserName">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="txtContraseña" class="col-form-label col-sm-2 col-form-label-sm">Contraseña: <span class="error"></span></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm model" id="txtContraseña" name="Contraseña">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label for="txtEmpleado" class="col-form-label col-sm-2 col-form-label-sm">Empleado: <span class="error"></span></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm model" id="txtEmpleado" name="Empleado">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="txtRol" class="col-form-label col-sm-2 col-form-label-sm">Rol: <span class="error"></span></label>
+                        <div class="col-sm-10">
+                            <input type="text" class="form-control form-control-sm model" id="txtRol" name="Rol">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <label for="cboEstado" class="col-sm-2 col-form-label col-form-label-sm">Activo:</label>
+                        <div class="col-sm-10">
+                            <select class="form-control form-control-sm model" id="cboEstado" name="Estado">
+                                <option value="1">Activo</option>
+                                <option value="0">Inactivo</option>
+                            </select>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-sm btn-danger" data-dismiss="modal">Cerrar</button>
+                <button type="button" class="btn btn-sm btn-primary" onclick="Guardar()">Guardar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <partial name="_ValidationScriptsPartial" />
+    <script src="~/js/CrudUsuario.js"></script>
+}

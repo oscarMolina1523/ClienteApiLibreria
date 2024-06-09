@@ -6,46 +6,194 @@
     <title>@ViewData["Title"] - ConsumirAPILibreria</title>
 
     <link rel="stylesheet" href="~/bootstrap-5.0.2-dist/Alpha/bootstrap.min.css" />
-    <link rel="stylesheet"  href="~/css/sweetalert2.css" />
-    <link rel="stylesheet"  href="~/bootstrap-5.0.2-dist/Alpha/Alpha1/bootstrap.min.css" />
-    <link rel="stylesheet"  href="~/DataTables/DataTables-1.13.6/css/dataTables.bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/sweetalert2.css" />
+    <link rel="stylesheet" href="~/bootstrap-5.0.2-dist/Alpha/Alpha1/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/DataTables/DataTables-1.13.6/css/dataTables.bootstrap.min.css" />
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/ConsumirAPILibreria.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">ConsumirAPILibreria</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
+    @{
+        var currentAction = ViewContext.RouteData.Values["action"].ToString().ToLowerInvariant();
+    }
+    @if (currentAction == "index" || currentAction == "")
+    {
+        <div class="hero_area">
+
+            <header class="header_section">
+                <div class="container-fluid">
+                    <nav class="navbar navbar-expand-lg custom_nav-container">
+                        <a class="navbar-brand" href="index.html">
+                            <img src="images/logo.png" alt="" />
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav  ">
+                                <li class="nav-item active">
+                                    <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="about.html"> About</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="work.html">Work </a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="category.html"> Category </a>
+                                </li>
+                            </ul>
+                            <div class="user_option">
+                                <a href="">
+                                    <span>
+                                        Login
+                                    </span>
+                                </a>
+                                <form class="form-inline my-2 my-lg-0 ml-0 ml-lg-4 mb-3 mb-lg-0">
+                                    <button class="btn  my-2 my-sm-0 nav_search-btn" type="submit"></button>
+                                </form>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="custom_menu-btn ">
+                                <button>
+                                    <span class=" s-1">
+
+                                    </span>
+                                    <span class="s-2">
+
+                                    </span>
+                                    <span class="s-3">
+
+                                    </span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </nav>
+                </div>
+            </header>
+
+            <section class="slider_section ">
+                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-5 offset-md-1">
+                                        <div class="detail-box">
+                                            <h1>
+                                                Bienvenido al <br>
+                                                Sistema Web de<br>
+                                                Libreria Estudiante
+                                            </h1>
+                                            <p>
+                                                Con mas de 18 años en el mercado, sirviendo a las nuevas generaciones
+                                                con productos de calidad para mejores estudios
+                                            </p>
+
+                                            <div class="btn-box">
+                                                <a href="javascript:void(0);" class="btn-1" id="loginButton">
+                                                    Iniciar Sesion
+                                                </a>
+                                                <a href="javascript:void(0);" class="btn-2" id="registerButton">
+                                                    Registrarse
+                                                </a>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="offset-md-1 col-md-4 img-container">
+                                        <div class="img-box">
+                                            <img src="https://img.freepik.com/vector-gratis/logotipo-libreria-diseno-plano-dibujado-mano_23-2149350212.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+        <!-- aqui estan los modales de registrar y login -->
+        <div class="modal fade" id="LoginModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Iniciar Sesion</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <label for="emailOrUsername">Email o Usuario:</label>
+                                <input type="text" class="form-control" id="emailOrUsername" placeholder="Ingrese su email o usuario">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña:</label>
+                                <input type="password" class="form-control" id="password" placeholder="Ingrese su contraseña">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="rememberMe">
+                                <label class="form-check-label" for="rememberMe">Recordarme</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3" id="Entrarbtn">Entrar</button>
+                        </form>
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+        </div>
+
+        <div class="modal fade" id="RegisterModal" tabindex="-1" role="dialog" data-backdrop="static" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalLabel">Registrarse</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <form id="RegisterForm">
+                            <div class="form-group">
+                                <label for="emailOrUsername">Email:</label>
+                                <input type="text" class="form-control" id="registerEmail" placeholder="Ingrese su email">
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Contraseña:</label>
+                                <input type="password" class="form-control" id="registerPassword" placeholder="Ingrese su contraseña">
+                            </div>
+                            <div class="form-group">
+                                <label for="confirmPassword">Confirmar Contraseña:</label>
+                                <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme su contraseña">
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="registerRememberMe">
+                                <label class="form-check-label" for="registerRememberMe">Recordarme</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3" id="Registrarbtn">Registrar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+
     <div class="container">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2024 - ConsumirAPILibreria - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-        </div>
-    </footer>
 
     <script src="~/js/sweetalert2.all.js"></script>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
@@ -62,6 +210,44 @@
     <script type="text/javascript" src="~/DataTables/Buttons-2.4.2/js/buttons.colVis.min.js"></script>
     <script type="text/javascript" src="~/DataTables/Buttons-2.4.2/js/buttons.html5.min.js"></script>
     <script type="text/javascript" src="~/DataTables/Buttons-2.4.2//js/buttons.print.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#loginButton').click(function () {
+                $('#LoginModal').modal('show');
+            });
+
+            $('#Entrarbtn').click(function (event) {
+                event.preventDefault();
+                var form = document.getElementById('loginForm');
+                if (form.checkValidity()) {
+                    $('#LoginModal').modal('hide');
+                    setTimeout(function () {
+                        window.location.href = '@Url.Action("OptionsFunctions", "Home")';
+                    }, 500);
+                } else {
+                    alert('Por favor, complete todos los campos.');
+                }
+            });
+
+            $('#registerButton').click(function () {
+                $('#RegisterModal').modal('show');
+            });
+
+            $('#Registrarbtn').click(function (event) {
+                event.preventDefault();
+                var form = document.getElementById('RegisterForm');
+                if (form.checkValidity()) {
+                    $('#RegisterModal').modal('hide');
+                    setTimeout(function () {
+                        window.location.href = '@Url.Action("OptionsFunctions", "Home")';
+                    }, 500);
+                } else {
+                    alert('Por favor, complete todos los campos.');
+                }
+            });
+        });
+    </script>
 
     @await RenderSectionAsync("Scripts", required: false)
 </body>

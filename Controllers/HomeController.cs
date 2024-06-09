@@ -18,10 +18,16 @@ namespace ConsumirAPILibreria.Controllers
             return View();
         }
 
-        public IActionResult Privacy()
+        public IActionResult OptionsFunctions()
         {
-            return View();
+            return View("OptionsFunctions");
         }
+
+        public IActionResult AdministradorCatalogos()
+        {
+            return View("AdministradorCatalogos");
+        }
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

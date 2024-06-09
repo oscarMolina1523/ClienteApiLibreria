@@ -9,65 +9,81 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = ConsumirAPILibreria
 build_property.RootNamespace = ConsumirAPILibreria
-build_property.ProjectDir = C:\Users\user\Desktop\ConsumirAPILibreria\
+build_property.ProjectDir = C:\Users\user\Desktop\ClienteApiLibreria\
 build_property.RazorLangVersion = 7.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\ConsumirAPILibreria
+build_property.MSBuildProjectDirectory = C:\Users\user\Desktop\ClienteApiLibreria
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Categoria/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Categoria/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2F0ZWdvcmlhXENyZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Cliente/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Cliente/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2xpZW50ZVxDcmVhci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Empleado/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Empleado/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRW1wbGVhZG9cQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Home/Index.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Home/Privacy.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Home/Privacy.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Marca/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Marca/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWFyY2FcQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Material/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Material/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWF0ZXJpYWxcQ3JlYXIuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Medida/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Medida/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTWVkaWRhXENyZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Rol/Crear.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Proveedor/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvdmVlZG9yXENyZWFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Rol/Crear.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sXENyZWFyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Shared/Error.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Shared/AdministradorCatalogos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluaXN0cmFkb3JDYXRhbG9nb3MuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Shared/OptionsFunctions.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE9wdGlvbnNGdW5jdGlvbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/_ViewImports.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Usuario/Crear.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXN1YXJpb1xDcmVhci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/_ViewStart.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/user/Desktop/ConsumirAPILibreria/Views/Shared/_Layout.cshtml]
+[C:/Users/user/Desktop/ClienteApiLibreria/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-6812xqlk2b
