@@ -260,7 +260,6 @@ function Guardar() {
             type: "POST",
             data: request,
             success: function (data) {
-
                 if (data.resultado) {
                     tabladata.ajax.reload();
                     $('#FormModalCliente').modal('hide');

@@ -565,6 +565,10 @@
       "PackagePath": "staticwebassets\\bootstrap-5.0.2-dist\\js\\bootstrap.min.js.map"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\css\\FacturaVentas.css",
+      "PackagePath": "staticwebassets\\css\\FacturaVentas.css"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

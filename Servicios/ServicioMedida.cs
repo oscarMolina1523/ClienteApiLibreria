@@ -38,7 +38,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(medida), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PostAsync("/Medida/CrearMedida", content);
+            var response = await cliente.PostAsync("/Medida/Crear", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;
@@ -76,7 +76,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(medida), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PutAsync("/Medida/ModificarMedida", content);
+            var response = await cliente.PutAsync("/Medida/Modificar", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;

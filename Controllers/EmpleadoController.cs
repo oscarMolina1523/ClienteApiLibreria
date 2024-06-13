@@ -20,7 +20,7 @@ namespace ConsumirAPILibreria.Controllers
 
         public async Task<IActionResult> Guardar(Empleado empleado)
         {
-
+            Console.WriteLine(empleado);
             bool respuesta = false;
 
             if (empleado.Id == Guid.Empty)

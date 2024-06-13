@@ -1,0 +1,140 @@
+﻿body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+.invoice-container {
+    width: 21cm;
+    height: 29.7cm;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #17223b;
+    color: white;
+    padding: 10px;
+}
+
+.header-left .logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.header-right h1 {
+    font-size: 28px;
+    text-align: center;
+}
+
+.invoice-details {
+    padding: 10px;
+}
+
+.details-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.details-column {
+    flex: 1;
+    margin-right: 10px;
+}
+
+    .details-column:last-child {
+        margin-right: 0;
+    }
+
+.details-row label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.details-row input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.invoice-table table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.invoice-table th, .invoice-table td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+.invoice-table th {
+    background-color: #17223b;
+    color: white;
+    font-weight: bold;
+}
+
+.invoice-table input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    box-sizing: border-box;
+    background-color: transparent;
+}
+
+.invoice-totals {
+    text-align: right;
+}
+
+.totals-row {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+    .totals-row label {
+        width: 150px;
+        text-align: right;
+        margin-right: 10px;
+        font-weight: bold;
+    }
+
+    .totals-row input {
+        width: 150px;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        text-align: right;
+        box-sizing: border-box;
+    }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #17223b;
+    color: white;
+}
+
+.footer-section {
+    flex: 1;
+    text-align: center;
+}
+
+    .footer-section p {
+        margin: 5px 0;
+    }

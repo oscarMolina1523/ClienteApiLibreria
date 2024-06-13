@@ -28,6 +28,15 @@ namespace ConsumirAPILibreria.Controllers
             return View("AdministradorCatalogos");
         }
 
+        public IActionResult FacturaVentas()
+        {
+            return View("FacturaVenta");
+        }
+
+        public IActionResult FacturaCompras()
+        {
+            return View("FacturaCompra");
+        }
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()

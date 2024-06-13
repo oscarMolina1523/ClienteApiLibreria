@@ -20,7 +20,7 @@ namespace ConsumirAPILibreria.Controllers
 
         public async Task<IActionResult> Guardar(Material ObjMaterial)
         {
-
+            Console.WriteLine(ObjMaterial);
             bool respuesta = false;
 
             if (ObjMaterial.Id == Guid.Empty)

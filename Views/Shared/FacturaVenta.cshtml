@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ConsumirAPILibreria</title>
+
+    <link rel="stylesheet" href="~/css/FacturaVentas.css" asp-append-version="true" />
+
+</head>
+<body>
+    <div class="invoice-container">
+        <header>
+            <div class="header-left">
+                <img src="https://img.freepik.com/vector-gratis/logotipo-libreria-diseno-plano-dibujado-mano_23-2149350212.jpg" alt="Estudio Shonos" class="logo">
+            </div>
+            <div class="header-right">
+                <h1>LIBRERIA ESTUDIANTE</h1>
+                <h1>FACTURA DE VENTA</h1>
+            </div>
+        </header>
+        <section class="invoice-details">
+            <div class="details-row">
+                <div class="details-column">
+                    <label for="invoice-number">NÚMERO:</label>
+                    <input type="text" id="invoice-number">
+                </div>
+                <div class="details-column">
+                    <label for="tax-details">DATOS FISCALES:</label>
+                    <input type="text" id="tax-details">
+                </div>
+                <div class="details-column">
+                    <label for="date">FECHA:</label>
+                    <input type="text" id="date">
+                </div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">
+                    <label for="client">CLIENTE:</label>
+                    <input type="text" id="client">
+                </div>
+                <div class="details-column">
+                    <label for="address">DOMICILIO:</label>
+                    <input type="text" id="address">
+                </div>
+            </div>
+            <div class="details-row">
+                <div class="details-column">
+                    <label for="city-state">CIUDAD O ESTADO:</label>
+                    <input type="text" id="city-state">
+                </div>
+                <div class="details-column">
+                    <label for="phone">TEL.:</label>
+                    <input type="text" id="phone">
+                </div>
+            </div>
+        </section>
+        <section class="invoice-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>CANTIDAD</th>
+                        <th>DESCRIPCIÓN</th>
+                        <th>VALOR UNITARIO</th>
+                        <th>IMPORTE</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                        <td><input type="text"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section class="invoice-totals">
+            <div class="totals-row">
+                <label for="subtotal">SUBTOTAL:</label>
+                <input type="text" id="subtotal">
+            </div>
+            <div class="totals-row">
+                <label for="tax">IMPUESTO:</label>
+                <input type="text" id="tax">
+            </div>
+            <div class="totals-row">
+                <label for="total">TOTAL:</label>
+                <input type="text" id="total">
+            </div>
+        </section>
+        <footer>
+            <div class="footer-section">
+                <p>DIRECCIÓN</p>
+                <p>Barrio Villa Esperanza, del instituto Manuel Hernández cuadra y media al sur. Jinotepe, Carazo.</p>
+            </div>
+            <div class="footer-section">
+                <p>TELÉFONO</p>
+                <p>(505) 8230-2041</p>
+            </div>
+            <div class="footer-section">
+                <p>SITIO WEB</p>
+                <p>www.UnanLibreriaEstudiante.com</p>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

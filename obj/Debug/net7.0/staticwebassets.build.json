@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "8o2h/sJ/5/eA4yeXN7WpKg9V+6awcRA6JmbU1zZQa+s=",
+  "Hash": "l7zcWLcen+3nBWqRBq5nPsPExd5M2JXZPqh+KMI8Avk=",
   "Source": "ConsumirAPILibreria",
   "BasePath": "_content/ConsumirAPILibreria",
   "Mode": "Default",
@@ -865,6 +865,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\bootstrap-5.0.2-dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\css\\FacturaVentas.css",
+      "SourceId": "ConsumirAPILibreria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\",
+      "BasePath": "_content/ConsumirAPILibreria",
+      "RelativePath": "css/FacturaVentas.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\FacturaVentas.css"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\css\\site.css",

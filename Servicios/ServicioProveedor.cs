@@ -38,7 +38,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(proveedor), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PostAsync("/Proveedor/CrearProveedor", content);
+            var response = await cliente.PostAsync("/Proveedor/Crear", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;
@@ -76,7 +76,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(proveedor), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PutAsync("/Proveedor/ModificarProveedor", content);
+            var response = await cliente.PutAsync("/Proveedor/Modificar", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;

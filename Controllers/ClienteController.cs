@@ -20,12 +20,11 @@ namespace ConsumirAPILibreria.Controllers
 
         public async Task<IActionResult> Guardar(Cliente ObjCliente)
         {
-
+            Console.WriteLine(ObjCliente);
             bool respuesta = false;
 
             if (ObjCliente.Id == Guid.Empty)
             {
-
                 respuesta = await _servicioAPI.Insertar(ObjCliente);
             }
             else

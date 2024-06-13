@@ -36,7 +36,13 @@
                 </div>
                 <div class="box">
                     <div class="img-box">
-                        <img src="~/imagenes/compra.png" alt="">
+                        <img src="~/imagenes/compra.png" alt="" asp-controller="Home"
+                             asp-action="FacturaCompras" id="compras" onclick="redireccionar3()">
+                        <script>
+                            function redireccionar3() {
+                                window.location.href = '/Home/FacturaCompras';
+                            }
+                        </script>
                     </div>
                     <div class="detail-box">
                         <h5>
@@ -46,7 +52,13 @@
                 </div>
                 <div class="box">
                     <div class="img-box">
-                        <img src="~/imagenes/venta.png" alt="">
+                        <img src="~/imagenes/venta.png" alt="" asp-controller="Home"
+                             asp-action="FacturaVentas" id="ventas" onclick="redireccionar2()">
+                        <script>
+                            function redireccionar2() {
+                                window.location.href = '/Home/FacturaVentas';
+                            }
+                        </script>
                     </div>
                     <div class="detail-box">
                         <h5>
