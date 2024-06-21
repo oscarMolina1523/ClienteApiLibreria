@@ -40,7 +40,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(rol), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PostAsync("/Rol/Crear", content);
+            var response = await cliente.PostAsync("/Rol/CrearRol", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;
@@ -78,7 +78,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(rol), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PutAsync("/Rol/Modificar", content);
+            var response = await cliente.PutAsync("/Rol/ModificarRol", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;

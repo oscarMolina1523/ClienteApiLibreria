@@ -625,6 +625,10 @@
       "PackagePath": "staticwebassets\\js\\CrudMedida.js"
     },
     {
+      "Id": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\js\\CrudProducto.js",
+      "PackagePath": "staticwebassets\\js\\CrudProducto.js"
+    },
+    {
       "Id": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\js\\CrudProveedor.js",
       "PackagePath": "staticwebassets\\js\\CrudProveedor.js"
     },

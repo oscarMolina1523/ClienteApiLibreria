@@ -16,6 +16,6 @@
 
         public bool Estado { get; set; }
 
-        public string NameRol => rol?.Descripcion;
+        public string NameRol => rol.Descripcion;
     }
 }

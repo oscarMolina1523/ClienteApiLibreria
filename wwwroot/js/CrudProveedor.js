@@ -230,10 +230,10 @@ function abrirPopUpForm(json) {
     if (json != null) {
 
         $("#txtid").val(json.id);
-        $("#txtDireccion").val(json.direccion);
-        $("#txtDescripcion").val(json.descripcion);
-        $("#txtTelefono").val(json.telefono);
-        $("#txtCorreo").val(json.correoElectronico);
+        $("#txtDireccion").val(json.Direccion);
+        $("#txtDescripcion").val(json.Descripcion);
+        $("#txtTelefono").val(json.Telefono);
+        $("#txtCorreo").val(json.CorreoElectronico);
 
     } else {
         $("#txtid").val(null);
@@ -252,10 +252,10 @@ function Guardar() {
     if ($("#formProveedor").valid()) {
         var request = {
             id: $("#txtid").val(),
-            nombres: ($("#txtDireccion").val() != "" ? $("#txtDireccion").val() : ""),
-            nombres: ($("#txtDescripcion").val() != "" ? $("#txtDescripcion").val() : ""),
-            telefono: ($("#txtTelefono").val() != "" ? $("#txtTelefono").val() : ""),
-            cedula: ($("#txtCorreo").val() != "" ? $("#txtCorreo").val() : ""),
+            Direccion: ($("#txtDireccion").val() != "" ? $("#txtDireccion").val() : ""),
+            Descripcion: ($("#txtDescripcion").val() != "" ? $("#txtDescripcion").val() : ""),
+            Telefono: ($("#txtTelefono").val() != "" ? $("#txtTelefono").val() : ""),
+            CorreoElectronico: ($("#txtCorreo").val() != "" ? $("#txtCorreo").val() : ""),
 
         }
         console.log($("#txtid").val());

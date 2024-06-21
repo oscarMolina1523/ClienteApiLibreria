@@ -241,7 +241,7 @@ function abrirPopUpForm(json) {
 
         $("#txtid").val(json.id);
         $("#txtNombre").val(json.nombres);
-        $("#txtApellido").val(json.nombres);
+        $("#txtApellido").val(json.apellidos);
         $("#txtCedula").val(json.cedula);
         $("#txtTelefono").val(json.telefono);
         $("#cboEstado").val(json.estado == true ? 1 : 0);
@@ -265,7 +265,7 @@ function Guardar() {
         var request = {
             id: $("#txtid").val(),
             nombres: ($("#txtNombre").val() != "" ? $("#txtNombre").val() : ""),
-            nombres: ($("#txtApellido").val() != "" ? $("#txtApellido").val() : ""),
+            apellidos: ($("#txtApellido").val() != "" ? $("#txtApellido").val() : ""),
             cedula: ($("#txtCedula").val() != "" ? $("#txtCedula").val() : ""),
             telefono: ($("#txtTelefono").val() != "" ? $("#txtTelefono").val() : ""),
             estado: ($("#cboEstado").val() == "1" ? true : false)

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "l7zcWLcen+3nBWqRBq5nPsPExd5M2JXZPqh+KMI8Avk=",
+  "Hash": "ulG3hQaTrG/Ld1VH5gcc3kf5cvODdRxFFJQJQn0qrZc=",
   "Source": "ConsumirAPILibreria",
   "BasePath": "_content/ConsumirAPILibreria",
   "Mode": "Default",
@@ -3024,6 +3024,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\js\\CrudMedida.js"
+    },
+    {
+      "Identity": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\js\\CrudProducto.js",
+      "SourceId": "ConsumirAPILibreria",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\",
+      "BasePath": "_content/ConsumirAPILibreria",
+      "RelativePath": "js/CrudProducto.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\CrudProducto.js"
     },
     {
       "Identity": "C:\\Users\\user\\Desktop\\ClienteApiLibreria\\wwwroot\\js\\CrudProveedor.js",

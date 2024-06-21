@@ -24,9 +24,19 @@ $(document).ready(function () {
             { "data": "id" },
             { "data": "nombreUsuario" },
             { "data": "contraseña" },
-            { "data": "empleado.Nombres" },
             {
-                "data": "NameRol"
+                "data": "empleado",
+                "render": function (data, type, row) {
+
+                    return data && data.nombres ? data.nombres : '';
+                }
+            },
+            {
+                "data": "rol",
+                "render": function (data, type, row) {
+
+                    return data && data.descripcion ? data.descripcion : '';
+                }
             },
             {
                 "data": "estado", "render": function (data) {

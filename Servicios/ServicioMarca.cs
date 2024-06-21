@@ -39,7 +39,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(marca), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PostAsync("/Marca/Crear", content);
+            var response = await cliente.PostAsync("/Marca/CrearMarca", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;
@@ -77,7 +77,7 @@ namespace ConsumirAPILibreria.Servicios
             cliente.BaseAddress = new Uri(_baseUrl);
             var content = new StringContent(JsonConvert.SerializeObject(marca), Encoding.UTF8, "application/json");
 
-            var response = await cliente.PutAsync("/Marca/Modificar", content);
+            var response = await cliente.PutAsync("/Marca/ModificarMarca", content);
             if (response.IsSuccessStatusCode)
             {
                 respuesta = true;

@@ -13,6 +13,7 @@ builder.Services.AddScoped<IServicioCliente, ServicioCliente>();
 builder.Services.AddScoped<IServicioEmpleado, ServicioEmpleado>();
 builder.Services.AddScoped<IServicioProveedor, ServicioProveedor>();
 builder.Services.AddScoped<IServicioUsuario, ServicioUsuario>();
+builder.Services.AddScoped<IServicioProducto, ServicioProducto>();
 
 var app = builder.Build();
 

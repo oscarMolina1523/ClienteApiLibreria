@@ -20,7 +20,7 @@ namespace ConsumirAPILibreria.Controllers
 
         public async Task<IActionResult> Guardar(Proveedor proveedor)
         {
-
+            Console.WriteLine(proveedor);
             bool respuesta = false;
 
             if (proveedor.Id == Guid.Empty)
